@@ -1,0 +1,7 @@
+.centered-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh; /* This sets the container's height to the viewport height for vertical centering */
+}

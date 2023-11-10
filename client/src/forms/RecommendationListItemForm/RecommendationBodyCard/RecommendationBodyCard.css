@@ -1,0 +1,41 @@
+/* RecommendationBodyCard.css */
+
+.megusta-button {
+  background-color: #00a680;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.megusta-button.like {
+  background-color: #ff6d01;
+}
+
+.megusta-button:hover {
+  background-color: #00906c;
+}
+
+.likes-text {
+  font-size: 1.5vw; 
+  text-align: left;
+
+ 
+  @media (max-width: 768px) {
+    font-size: 2vw; 
+  }
+
+
+  @media (max-width: 992px) {
+    font-size: 2vw;
+  }
+
+
+  @media (max-width: 576px) {
+    font-size: 2vw; 
+  }
+}
