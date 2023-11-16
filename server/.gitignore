@@ -2,4 +2,3 @@ node_modules
 .env
 uploads
 package.json
-package-lock.json
