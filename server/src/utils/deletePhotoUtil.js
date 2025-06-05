@@ -26,7 +26,7 @@ const deletePhotoUtil = async (imgName, width) => {
         await fs.unlink(imgPath);
     } catch (err) {
         console.error(err);
-        deleteFileError;
+        deleteFileError();
     }
 };
 

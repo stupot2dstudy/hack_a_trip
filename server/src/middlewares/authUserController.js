@@ -14,7 +14,8 @@ const authUserController = async (req, res, next) => {
         // Obtenemos el token de la cabecera de la petición.
         const { authorization } = req.headers;
         if (!authorization) {
-            notAuthenticatedError; // 
+            // Launch specific error when there is no authorization header
+            notAuthenticatedError();
         }
 
         // Variable que almacenará la información del token desencriptado.
