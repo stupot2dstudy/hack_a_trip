@@ -27,6 +27,13 @@ module.exports = {
             message: 'Primero incia sesion',
         };
     },
+    missingFieldsError() {
+        throw {
+            httpStatus: 400, // Bad request
+            code: 'MISSING_FIELDS',
+            message: 'Faltan campos obligatorios',
+        };
+    },
     likeAlreadyExistsError() {
         throw {
             httpStatus: 409, // Conflict

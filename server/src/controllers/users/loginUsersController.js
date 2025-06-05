@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 // Importar funciones de manejo de errores
-const { errorController, invalidCredentialsError } = require('../../services/errorService');
+const { missingFieldsError, invalidCredentialsError } = require('../../services/errorService');
 
 // Importar bcrypt para el cifrado de contraseñas
 const bcrypt = require('bcrypt');
@@ -15,7 +15,7 @@ const loginUsersController = async (req, res, next) => {
 
         // Comprobar campos faltantes
         if (!email || !password) {
-            errorController();
+            missingFieldsError();
         }
 
         // Obtener los datos del usuario por correo electrónico

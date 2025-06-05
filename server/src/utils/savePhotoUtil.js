@@ -42,7 +42,7 @@ const savePhotoUtil = async (img, width) => {
         return imgName;
     } catch (err) {
         console.error(err);
-        saveFileError;
+        saveFileError();
     }
 };
 
